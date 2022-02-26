@@ -12,4 +12,10 @@ public class UserController {
     public ResponseEntity<String> getUser() {
         return new ResponseEntity<>("This response is from User API", HttpStatus.OK);
     }
+
+
+    @GetMapping("/")
+    public ResponseEntity<String> emptyAPI() {
+        return new ResponseEntity<>("New API with empty url", HttpStatus.OK);
+    }
 }
