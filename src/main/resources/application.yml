@@ -2,7 +2,11 @@
 spring:
   profiles: default
 message: "Hello, from local!"
+server:
+  port: 8091
 ---
 spring:
   profiles: production
 message: "Hello, from App Engine!"
+server:
+  port: 8092
